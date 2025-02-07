@@ -10,7 +10,7 @@ public class ArrayTask2 {
 		String message = "텍스트를 입력해주세요.", inputText = null;
 	      char [] inputTextChar = null;
 	      
-	      int numA = (int)'A', numZ = (int)'Z', gap = (int)'a' - (int)'A';
+	      int numA = 'A', numZ = 'Z', gap = 'a' - 'A';
 	      
 	      int count = 0;
 	      
@@ -27,16 +27,14 @@ public class ArrayTask2 {
 	      for(int i = 0; i < count; i++) {
 	         inputTextChar[i] = inputText.charAt(i);
 	         
-	         if((int)inputTextChar[i] >= numA
-	               && (int)inputTextChar[i] <= numZ) {
-	            int changeLetter =  (int)inputTextChar[i] + gap;
-	            inputTextChar[i] = (char)changeLetter;
+	         if(inputTextChar[i] >= numA
+	               && inputTextChar[i] <= numZ) {
+	            inputTextChar[i] += gap;
 	         }
-	         else if((int)inputTextChar[i] >= numA + gap 
-	               && (int)inputTextChar[i] <= numZ + gap) {
+	         else if(inputTextChar[i] >= numA + gap 
+	               && inputTextChar[i] <= numZ + gap) {
 	            
-	            int changeLetter =  (int)inputTextChar[i] - gap;
-	            inputTextChar[i] = (char)changeLetter;
+	            inputTextChar[i] -= gap;
 	         }
 	      }
 	      
@@ -44,29 +42,26 @@ public class ArrayTask2 {
 	         System.out.print(inputTextChar[i]);
 	      }
 	    System.out.println();
+	    
 //	    2번 문제
 	      String word = "";
-	      int textLength = 0;
+
 	        String message1 = "정수를 입력해주세요. ex)1024";
 	        Scanner sc1 = new Scanner(System.in);
 	        
 	        System.out.println(message1);
 	   
-	        word = sc.nextLine() + (char)0;
-	        while(word.charAt(textLength) != 0) {
-	           
-	           textLength++;
-	        }
-
+	        word = sc.nextLine();
+	   
 	      
-	        int[] arr = new int[textLength];
-	        char[] hangle = new char[textLength]; 
+	        int[] arr = new int[word.length()];
+	        char[] hangle = new char[word.length()]; 
 	        
-	        for (int i = 0; i < textLength; i++) {
+	        for (int i = 0; i < word.length(); i++) {
 	           arr[i] = word.charAt(i);
 	        }
 	        
-	        for (int i = 0; i < textLength; i++) {
+	        for (int i = 0; i < word.length(); i++) {
 	           switch(arr[i]) {
 	              case '0':
 	                 hangle[i] = '공';
@@ -100,45 +95,13 @@ public class ArrayTask2 {
 	                 break;
 	           }        
 	        }
-	        for (int i = 0; i < textLength; i++) {
-	            switch(arr[i]) {
-	               case '공':
-	                  hangle[i] = '0';
-	                  break;
-	               case '일':
-	                  hangle[i] = '1';
-	                  break;
-	               case '이':
-	                  hangle[i] = '2';
-	                  break;
-	               case '삼':
-	                  hangle[i] = '3';
-	                  break;
-	               case '사':
-	                  hangle[i] = '4';
-	                  break;
-	               case '오':
-	                  hangle[i] = '5';
-	                  break;
-	               case '육':
-	                  hangle[i] = '6';
-	                  break;
-	               case '칠':
-	                  hangle[i] = '7';
-	                  break;
-	               case '팔':
-	                  hangle[i] = '8';
-	                  break;
-	               case '구':
-	                  hangle[i] = '9';
-	                  break;
-	            }        
-	         }
-	        
-	        for (int i = 0; i < textLength; i++) {
-	           System.out.print(hangle[i]);
-	        }
+	       
+	    for (int i = 0; i < word.length(); i++) {
+	    	System.out.print(hangle[i]);
+	    }
 	    System.out.println();
+	    
+	    
 //	    3번 문제
 		System.out.println("입력: ");
 
@@ -148,7 +111,7 @@ public class ArrayTask2 {
 		         
 			 count1++;
 		}
-		
+		System.out.println("찾을 문자를 입력해주세요.");
 		String findWord = sc.next();
 		System.out.println("찾을 문자 : " + findWord);
 		int num = count1;
