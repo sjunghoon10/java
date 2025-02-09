@@ -148,21 +148,21 @@ public class MethodTask4 {
 	
 	public static void main(String[] args) {
 		MethodTask4 mt = new MethodTask4();
-//		System.out.println(mt.wordCount("ccc",'c'));
-//		System.out.println(mt.findIndex(2));
-//		System.out.println(mt.wordToChange("공일이삼"));
-//		int[] arr4 = mt.minMax();
-//		for(int i=0; i<arr4.length; i++)
-//		{
-//			System.out.println(arr4[i]);
-//		}
+		System.out.println(mt.wordCount("ccc",'c'));
+		System.out.println(mt.findIndex(2));
+		System.out.println(mt.wordToChange("공일이삼"));
+		int[] arr4 = mt.minMax();
+		for(int i=0; i<arr4.length; i++)
+		{
+			System.out.println(arr4[i]);
+		}
 		int[] arr5 = new int[2];
 		mt.minMax(arr5);
 		for(int i=0; i<arr5.length; i++)
 		{
 			System.out.println(arr5[i]);
 		}
-//		System.out.println(mt.indexOf("abcd",'c'));
+		System.out.println(mt.indexOf("abcd",'c'));
 		
 	}
 }
