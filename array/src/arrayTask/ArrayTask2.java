@@ -118,7 +118,7 @@ public class ArrayTask2 {
 
 		char[] arr2 = new char[num];
 		int cnt =0;
-		
+
 		for(int i=0; i<num; i++)
 		{
 			arr2[i] = word2.charAt(i);

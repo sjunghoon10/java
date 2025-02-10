@@ -81,21 +81,17 @@ public class MethodTask4 {
 		int[] arr = new int[2];
 		int max =0;
 		int min =0;
-		for(int i=0; i<5; i++)
-		{
-			int num = sc.nextInt();
-			if(i == 0)
-			{
+		for(int i=0; i<5; i++){
+		int num = sc.nextInt();
+			if(i == 0){
 				max = num;
 				min = num;
 				continue;
 			}
-			if(num > max)
-			{
+			if(num > max){
 				max = num;
 			}
-			if(num < min)
-			{
+			if(num < min){
 				min = num;
 			}
 		}
@@ -145,7 +141,6 @@ public class MethodTask4 {
 		}
 		return -1;
 	}
-	
 	public static void main(String[] args) {
 		MethodTask4 mt = new MethodTask4();
 		System.out.println(mt.wordCount("ccc",'c'));
@@ -162,7 +157,7 @@ public class MethodTask4 {
 		{
 			System.out.println(arr5[i]);
 		}
-		System.out.println(mt.indexOf("abcd",'c'));
-		
+		int index = mt.indexOf("abcd", 'd');
+		System.out.printf("찾는 문자의 Index는 %d 입니다" , index);
 	}
 }
