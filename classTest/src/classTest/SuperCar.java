@@ -82,7 +82,7 @@ public class SuperCar {
 					}else {
 						ferrari.errorCount++;
 						if(ferrari.errorCount > 2) {
-							System.out.println("겨찰 출동");
+							System.out.println("경찰 출동");
 							break;
 						}
 					}

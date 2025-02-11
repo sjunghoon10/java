@@ -14,3 +14,4 @@ public class LocationTest {
 		System.out.println(data);
 	}
 }
+
