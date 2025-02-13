@@ -14,6 +14,5 @@ public class CastingTask2 {
 	Creature mobHuman = new Human();
 	
 	jh.hunt(mobElf);
-	
 	}
 }
