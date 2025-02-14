@@ -14,6 +14,6 @@ public class PersonMain {
 		
 		programmer.work();
 		programmer.hobby();
-		programmer.isNoteBook();
+		//programmer.isNoteBook();
 	}
 }
