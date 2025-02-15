@@ -6,7 +6,8 @@ public class Sports {
 //	2. 초기화 생성자
 //	3. private 붙이기
 //  4. getter, setter
-	
+//  5. toString 재정의
+//  6. hashcode, equals 재정의	
 	// alt + shift + a
 	private String type;
 	private int total;

@@ -88,10 +88,7 @@ public class MailTest {
 		for(String element : mailLists) {
 			mail.sendEmail(element, message);
 		}
-		
 	}
-	
-	
 }
 
 

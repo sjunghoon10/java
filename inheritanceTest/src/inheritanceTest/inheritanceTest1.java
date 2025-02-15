@@ -20,7 +20,7 @@ class B extends A {
 // int data;
 	
 	public B() {
-//		super();
+		super();
 		System.out.println(this);
 		System.out.println("자식 생성자 호출");
 	}
