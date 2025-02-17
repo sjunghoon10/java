@@ -11,7 +11,7 @@ public class Programmer extends Person {
 	
 	@Override
 	public void work() {
-		super.work();
+		//super.work();
 		System.out.println(name + "은 코딩을 합니다");
 	}
 	

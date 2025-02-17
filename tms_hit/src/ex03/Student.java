@@ -12,7 +12,7 @@ public class Student extends Person{
 	
 	@Override
 	public void work() {
-		super.work();
+		//super.work();
 		System.out.println(name + "은 공부를합니다.");
 	}
 	
