@@ -3,24 +3,71 @@ package collectionTest.arrayList.task;
 import java.util.Objects;
 
 public class User {
-	
+//	5분
 	private String id;
 	private String name;
 	private String password;
 	private String phone;
+	private int time;
 	
 	public User() {;}
 
+	public int getTime() {
+		return time;
+	}
+
+	public void setTime(int time) {
+		this.time = time;
+	}
+
 	public User(String id, String name, String password, String phone) {
+		super();
 		this.id = id;
 		this.name = name;
 		this.password = password;
 		this.phone = phone;
 	}
 
+	String getId() {
+		return id;
+	}
+
+	void setId(String id) {
+		this.id = id;
+	}
+
+	String getName() {
+		return name;
+	}
+
+	void setName(String name) {
+		this.name = name;
+	}
+
+	String getPassword() {
+		return password;
+	}
+
+	void setPassword(String password) {
+		this.password = password;
+	}
+
+	String getPhone() {
+		return phone;
+	}
+
+	void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", password=" + password + ", phone=" + phone + "]";
+	}
+
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, name, password, phone);
+		return Objects.hash(id);
 	}
 
 	@Override
@@ -32,45 +79,7 @@ public class User {
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
-		return Objects.equals(id, other.id) && Objects.equals(name, other.name)
-				&& Objects.equals(password, other.password) && Objects.equals(phone, other.phone);
-	}
-
-	@Override
-	public String toString() {
-		return "User [id=" + id + "]";
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
+		return Objects.equals(id, other.id);
 	}
 	
 	
