@@ -6,8 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="lib" path="C:/web_front_sjh/java/resource/java-sdk v2.2/lib/javaSDK-2.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/web_front_sjh/java/resource/org.json.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/web_front_sjh/java/resource/java-sdk v2.2/lib/json-simple-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/web_0900_ksh/java/resource/org.json.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/web_0900_ksh/java/resource/java-sdk v2.2/lib/javaSDK-2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/web_0900_ksh/java/resource/java-sdk v2.2/lib/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

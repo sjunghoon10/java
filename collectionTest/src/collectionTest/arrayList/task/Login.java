@@ -4,7 +4,7 @@ public class Login {
 	public static void main(String[] args) {
 		UserField userField = new UserField();
 		
-// 		단위 테스트
+//		단위 테스트
 		User user = new User();
 		user.setId("ksh1234");
 		user.setPassword("1234");
@@ -18,7 +18,7 @@ public class Login {
 		
 		User userForLogin = new User();
 		userForLogin.setId("ksh1234");
-		userForLogin.setPassword("12345");
+		userForLogin.setPassword("1234");
 		if(userField.login(userForLogin)) {
 			System.out.println("로그인 성공");
 		}else {
@@ -32,7 +32,7 @@ public class Login {
 		User foundUser = userField.checkId(UserField.userId);
 		foundUser.setPassword("6789");
 		
-//		비밀번호 변경한다
+//		비밀번호 변경
 		userField.update(foundUser);
 		
 //		로그아웃
@@ -47,5 +47,13 @@ public class Login {
 		}else {
 			System.out.println("로그인 실패");
 		}
+			
+		
+		
+		
+		
+		
+		
+		
 	}
 }

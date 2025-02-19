@@ -8,17 +8,8 @@ public class User {
 	private String name;
 	private String password;
 	private String phone;
-	private int time;
 	
 	public User() {;}
-
-	public int getTime() {
-		return time;
-	}
-
-	public void setTime(int time) {
-		this.time = time;
-	}
 
 	public User(String id, String name, String password, String phone) {
 		super();

@@ -3,48 +3,63 @@ package collectionTest;
 import java.util.Objects;
 
 public class User {
+	
 	private int id;
-	private String names;
+	private String name;
 	private int age;
 	private String job;
-	public User() {}
 	
-	public User(int id, String names, int age, String job) {
-		super();
+	public User() {;}
+
+	public User(int id, String name, int age, String job) {
 		this.id = id;
-		this.names = names;
+		this.name = name;
 		this.age = age;
 		this.job = job;
 	}
 
-	public int getId() {
+	int getId() {
 		return id;
 	}
-	public void setId(int id) {
+
+	void setId(int id) {
 		this.id = id;
 	}
-	public String getNames() {
-		return names;
+
+	String getName() {
+		return name;
 	}
-	public void setNames(String names) {
-		this.names = names;
+
+	void setName(String name) {
+		this.name = name;
 	}
-	public int getAge() {
+
+	int getAge() {
 		return age;
 	}
-	public void setAge(int age) {
+
+	void setAge(int age) {
 		this.age = age;
 	}
-	public String getJob() {
+
+	String getJob() {
 		return job;
 	}
-	public void setJob(String job) {
+
+	void setJob(String job) {
 		this.job = job;
 	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", age=" + age + ", job=" + job + "]";
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -56,10 +71,5 @@ public class User {
 		User other = (User) obj;
 		return id == other.id;
 	}
-	@Override
-	public String toString() {
-		return "User [id=" + id + "]";
-	}
-	
 	
 }

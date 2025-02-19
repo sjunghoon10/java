@@ -26,7 +26,7 @@ public class ArrayListTest<T extends Number> {
 		datas.add(80);
 		datas.add(90);
 		System.out.println(datas.size());
-			
+		
 		try {
 			datas.get(0);
 		} catch (IndexOutOfBoundsException e) {
@@ -75,6 +75,7 @@ public class ArrayListTest<T extends Number> {
 			}
 		}
 
+		
 //		삭제 
 //		80을 인덱스로 삭제
 //		if(datas.contains(80)) {

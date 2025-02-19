@@ -1,6 +1,5 @@
 package lambdaTask2;
 
-@FunctionalInterface
 public interface Remove {
-	String removStr(String word, char letter);
+	public String removeStr(String content, char c);
 }
