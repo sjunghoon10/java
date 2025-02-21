@@ -21,7 +21,6 @@ class ClientThread extends Thread{
    public void run() {
       String line;
       try {
-         
          while((line = input.readLine()) != null) {
             System.out.println(line);
          }
