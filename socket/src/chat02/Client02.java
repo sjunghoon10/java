@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
@@ -15,9 +14,9 @@ public class Client02 {
 		Socket clientSocket = null;
 		BufferedReader in = null;
 		BufferedWriter out = null;
-		PrintWriter writer = null;
 		Scanner sc = new Scanner(System.in);
-		//String serverIp = "192.168.30.254";
+		
+//		String serverIp = "192.168.30.254";
 		String serverIp = "localhost";
 		
 		try {
@@ -38,22 +37,35 @@ public class Client02 {
 				String inMessage = in.readLine();
 				System.out.println("서버 >>" + inMessage);
 			}
+			
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
-		if(sc!= null) {
-			sc.close();
+			if(sc != null) {
+				sc.close();
+			}
+			if(out != null) {
+				out.close();
+			}
+			if(in != null) {
+				in.close();
+			}
+			if(clientSocket != null) {
+				clientSocket.close();
+			}
 		}
-		if(out!= null) {
-			out.close();
-		}
-		if(in!= null) {
-			in.close();
-		}
-		if(clientSocket != null) {
-			clientSocket.close();
-		}
-	}}
+		
+		
+	}
 }
+
+
+
+
+
+
+
+
+

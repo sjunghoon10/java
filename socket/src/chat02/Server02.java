@@ -18,14 +18,13 @@ public class Server02 {
 		Scanner sc = new Scanner(System.in);
 		
 		try {
-//			서버 소켓 생성
+//			서버소켓 생성
 			serverSocket = new ServerSocket(7777);
-			
 			System.out.println("연결 대기중...");
 			
 			socket = serverSocket.accept();
-			System.out.println("연결 되었습니다");
-			
+			System.out.println("연결 되었습니다.");
+
 //			네트워크 입출력 스트림 생성
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
@@ -38,7 +37,7 @@ public class Server02 {
 				System.out.println("서버에서 클라이언트로 보내기 >>");
 				String outMessage = sc.nextLine();
 				out.write(outMessage + "\n");
-				out.flush();	
+				out.flush();
 			}
 			
 		} catch (IOException e) {
@@ -60,5 +59,13 @@ public class Server02 {
 				serverSocket.close();
 			}
 		}
+		
+		
+	}
 }
-}
+
+
+
+
+
+
