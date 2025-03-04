@@ -59,8 +59,6 @@ public class Server02 {
 				serverSocket.close();
 			}
 		}
-		
-		
 	}
 }
 
