@@ -34,8 +34,8 @@ public class View {
       }
 
 // 로그아웃
-      memberDAO.logout();
-      
-      memberDAO.delete();
+//      memberDAO.logout();
+//      
+//      memberDAO.delete();
 	}
 }
